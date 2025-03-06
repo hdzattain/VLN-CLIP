@@ -1,0 +1,10 @@
+scene:
+  name: dynamic_apartment
+  path: "./data/scene_apartment_0.glb"
+  dynamic_obstacles:
+    - type: "MovingChair"
+      position: [1.5, 0.0, 2.0]
+      velocity: [0.1, 0.0, 0.1]
+  lighting_effects:
+    - type: "DaylightCycle"
+      speed: 0.5

@@ -1,0 +1,26 @@
+# 数据集配置
+dataset:
+  path: "./data/robothor"
+  split: "train"
+  batch_size: 32
+  num_workers: 4
+
+# 模型配置
+model:
+  base_model: "openai/clip-vit-base-patch32"
+  trajectory_head:
+    input_dim: 512
+    output_dim: 4
+
+# 训练配置
+training:
+  epochs: 10
+  learning_rate: 1e-4
+  weight_decay: 1e-5
+  log_interval: 100
+
+# TensorRT配置
+tensorrt:
+  precision: "FP16"
+  workspace_size: 4096
+  max_batch_size: 32
