@@ -4,12 +4,15 @@
 1 克隆仓库并安装依赖：
 
 git clone https://github.com/hdzattain/VLN-CLIP
+
 cd VLN-CLIP
+
 pip install -r requirements.txt
 
 
 2 下载RoboTHOR数据集并解压：
 wget https://prior-model-weights.s3.us-east-2.amazonaws.com/robothor-challenge-2021.zip
+
 unzip robothor-challenge-2021.zip -d data/
 
 
